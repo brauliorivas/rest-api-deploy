@@ -2,7 +2,7 @@
 GET http://localhost:3000/movies
 
 ### Recuperar una película por id
-GET http://localhost:3000/movies/c8a7d63f-3b04-44d3-9d95-8782fd7dcfaf
+GET http://localhost:3000/movies/6f93f08d-f389-11ee-95cd-80b65548b935
 
 ### Recuperar todas las películas de un género
 GET http://localhost:3000/movies?genre=action
@@ -18,7 +18,6 @@ Content-Type: application/json
   "duration": 175,
   "poster": "https://img.fruugo.com/product/4/49/14441494_max.jpg",
   "genre": [
-    "Crime",
     "Drama"
   ]
 }
@@ -32,10 +31,13 @@ Content-Type: application/json
   "year": "pepe"
 }
 
+### Borrar una película
+DELETE http://localhost:3000/movies/720923ef-f398-11ee-95cd-80b65548b935
+
 ### Actualizar una película
-PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+PATCH http://localhost:3000/movies/460c8a0f-f398-11ee-95cd-80b65548b935
 Content-Type: application/json
 
 {
-    "year": 1993
+  "year": 1994
 }
